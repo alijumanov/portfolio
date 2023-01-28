@@ -1,0 +1,254 @@
+.Projects {
+    // top: 0;
+    .wrapper {
+        @media (max-width:500px) {
+            padding-bottom: 15px;
+        }
+
+        .cards {
+            gap: 3vw 2vw;
+            display: grid;
+            margin-top: 3vw;
+            grid-template-columns: repeat(3, 3fr);
+
+            @media (max-width:767px) {
+                gap: 4vw 2.5vw;
+                margin-top: 4vw;
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            @media (max-width:500px) {
+                gap: 5vw 2.5vw;
+                margin-top: 6vw;
+            }
+
+            .project {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                flex-direction: column;
+
+                &:hover {
+                    .img {
+                        .contr {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .img {
+                    width: 100%;
+                    height: 17vw;
+                    display: flex;
+                    padding: 1.3vw;
+                    position: relative;
+                    align-items: center;
+                    border-radius: 1.2vw;
+                    -webkit-border-radius: 1.2vw;
+                    -moz-border-radius: 1.2vw;
+                    -ms-border-radius: 1.2vw;
+                    -o-border-radius: 1.2vw;
+                    justify-content: center;
+                    backdrop-filter: blur(4.5px);
+                    background: rgba(253, 253, 253, 0.06);
+                    box-shadow: 13px 10px 8px 2px rgba(8, 8, 55, 0.9);
+
+                    @media (max-width:767px) {
+                        height: 25vw;
+                        padding: 2vw;
+                        border-radius: 2vw;
+                        -webkit-border-radius: 2vw;
+                        -moz-border-radius: 2vw;
+                        -ms-border-radius: 2vw;
+                        -o-border-radius: 2vw;
+                    }
+
+                    @media (max-width:500px) {
+                        height: 30vw;
+                        padding: 2.5vw;
+                        border-radius: 3vw;
+                        -webkit-border-radius: 3vw;
+                        -moz-border-radius: 3vw;
+                        -ms-border-radius: 3vw;
+                        -o-border-radius: 3vw;
+                    }
+
+                    .pro-img {
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 100%;
+                        min-height: 100%;
+                        object-fit: cover;
+                        border-radius: 0.9vw;
+                        -webkit-border-radius: 0.9vw;
+                        -moz-border-radius: 0.9vw;
+                        -ms-border-radius: 0.9vw;
+                        -o-border-radius: 0.9vw;
+
+                        @media (max-width:767px) {
+                            border-radius: 1.5vw;
+                            -webkit-border-radius: 1.5vw;
+                            -moz-border-radius: 1.5vw;
+                            -ms-border-radius: 1.5vw;
+                            -o-border-radius: 1.5vw;
+                        }
+
+                        @media (max-width:500px) {
+                            border-radius: 2vw;
+                            -webkit-border-radius: 2vw;
+                            -moz-border-radius: 2vw;
+                            -ms-border-radius: 2vw;
+                            -o-border-radius: 2vw;
+                        }
+                    }
+
+                    .contr {
+                        opacity: 0;
+                        display: flex;
+                        position: absolute;
+                        align-items: center;
+                        border-radius: 0.9vw;
+                        -webkit-border-radius: 0.9vw;
+                        -moz-border-radius: 0.9vw;
+                        -ms-border-radius: 0.9vw;
+                        -o-border-radius: 0.9vw;
+                        justify-content: center;
+                        width: calc(100% - 2.6vw);
+                        height: calc(100% - 2.6vw);
+                        background-color: rgba(0, 0, 0, 0.603);
+
+                        @media (max-width:767px) {
+                            border-radius: 1.5vw;
+                            -webkit-border-radius: 1.5vw;
+                            -moz-border-radius: 1.5vw;
+                            -ms-border-radius: 1.5vw;
+                            -o-border-radius: 1.5vw;
+                            width: calc(100% - 4vw);
+                            height: calc(100% - 4vw);
+                        }
+
+                        @media (max-width:500px) {
+                            border-radius: 2vw;
+                            -webkit-border-radius: 2vw;
+                            -moz-border-radius: 2vw;
+                            -ms-border-radius: 2vw;
+                            -o-border-radius: 2vw;
+                            width: calc(100% - 5vw);
+                            height: calc(100% - 5vw);
+                        }
+
+                        .explore {
+                            padding: 1vw;
+                            color: white;
+                            font-size: 1.1vw;
+                            font-weight: 700;
+                            border-radius: 0.7vw;
+                            -webkit-border-radius: 0.7vw;
+                            -moz-border-radius: 0.7vw;
+                            -ms-border-radius: 0.7vw;
+                            -o-border-radius: 0.7vw;
+                            border: solid 1px white;
+                            font-family: 'Jura', sans-serif;
+
+                            &:hover {
+                                color: black;
+                                background-color: white;
+                            }
+
+                            @media (max-width:767px) {
+                                font-size: 2vw;
+                                padding: 1.5vw;
+                                border-radius: 1vw;
+                                -webkit-border-radius: 1vw;
+                                -moz-border-radius: 1vw;
+                                -ms-border-radius: 1vw;
+                                -o-border-radius: 1vw;
+                            }
+
+                            @media (max-width:500px) {
+                                font-size: 2.5vw;
+                                border-radius: 1.5vw;
+                                -webkit-border-radius: 1.5vw;
+                                -moz-border-radius: 1.5vw;
+                                -ms-border-radius: 1.5vw;
+                                -o-border-radius: 1.5vw;
+                            }
+                        }
+                    }
+                }
+
+                .name {
+                    margin: 0;
+                    margin-top: 1vw;
+                    text-align: center;
+
+                    @media (max-width:767px) {
+                        margin-top: 2vw;
+                    }
+                }
+            }
+        }
+
+        .link {
+            width: 100%;
+            display: flex;
+            margin-top: 3vw;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width:767px) {
+                margin-top: 4vw;
+            }
+
+            @media (max-width:500px) {
+                margin-top: 6vw;
+            }
+
+            button {
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-weight: 700;
+                transition: 0.2s;
+                -webkit-transition: 0.2s;
+                -moz-transition: 0.2s;
+                -ms-transition: 0.2s;
+                -o-transition: 0.2s;
+                padding: 0.8vw 3vw;
+                border-radius: 1vw;
+                -webkit-border-radius: 1vw;
+                -moz-border-radius: 1vw;
+                -ms-border-radius: 1vw;
+                -o-border-radius: 1vw;
+                background: rgba(252, 116, 255, 0.66);
+
+                &:hover {
+                    transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                }
+
+                @media (max-width:767px) {
+                    padding: 1.2vw 4vw;
+                    border-radius: 1.5vw;
+                    -webkit-border-radius: 1.5vw;
+                    -moz-border-radius: 1.5vw;
+                    -ms-border-radius: 1.5vw;
+                    -o-border-radius: 1.5vw;
+                }
+
+                @media (max-width:500px) {
+                    padding: 2vw 5vw;
+                    border-radius: 2vw;
+                    -webkit-border-radius: 2vw;
+                    -moz-border-radius: 2vw;
+                    -ms-border-radius: 2vw;
+                    -o-border-radius: 2vw;
+                }
+            }
+        }
+    }
+}

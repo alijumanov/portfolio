@@ -1,0 +1,136 @@
+.Team {
+    .wrapper {
+        z-index: 2;
+        position: sticky;
+
+        .persons {
+            gap: 2vw;
+            display: grid;
+            margin-top: 2vw;
+            grid-template-columns: repeat(2, 2fr);
+
+            @media (max-width:767px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .person {
+                width: 100%;
+                padding: 1.5vw;
+                margin-top: 6.5vw;
+                position: relative;
+                border-radius: 1vw;
+                -webkit-border-radius: 1vw;
+                -moz-border-radius: 1vw;
+                -ms-border-radius: 1vw;
+                -o-border-radius: 1vw;
+                background: rgba(10, 11, 60, 0.24);
+                box-shadow: 8px 6px 22px 12px #1B1646;
+                border: 1px solid rgba(31, 31, 53, 0.79);
+
+                @media (max-width:767px) {
+                    padding: 2.5vw;
+                    margin-top: 9vw;
+                    border-radius: 1.5vw;
+                    -webkit-border-radius: 1.5vw;
+                    -moz-border-radius: 1.5vw;
+                    -ms-border-radius: 1.5vw;
+                    -o-border-radius: 1.5vw;
+                }
+
+                .person-img {
+                    top: -5vw;
+                    width: 9vw;
+                    height: 9vw;
+                    position: absolute;
+
+                    @media (max-width:767px) {
+                        top: -9vw;
+                        width: 17vw;
+                        height: 17vw;
+                    }
+                }
+
+                .stamp {
+                    top: 1.5vw;
+                    right: 1.5vw;
+                    color: white;
+                    font-size: 1.2vw;
+                    font-weight: 700;
+                    position: absolute;
+                    padding: 0.4vw 1.2vw;
+                    border-radius: 0.5vw;
+                    -webkit-border-radius: 0.5vw;
+                    -moz-border-radius: 0.5vw;
+                    -ms-border-radius: 0.5vw;
+                    -o-border-radius: 0.5vw;
+                    transform: rotate(15deg);
+                    font-family: 'Jura', sans-serif;
+                    background: rgba(252, 116, 255, 0.66);
+
+                    @media (max-width:767px) {
+                        top: 3.5vw;
+                        right: 2.5vw;
+                        font-size: 2.3vw;
+                        border-radius: 1vw;
+                        -webkit-border-radius: 1vw;
+                        -moz-border-radius: 1vw;
+                        -ms-border-radius: 1vw;
+                        -o-border-radius: 1vw;
+                        padding: 0.7vw 2.2vw;
+                    }
+
+                    @media (max-width:500px) {
+                        font-size: 2.8vw;
+                        border-radius: 1.3vw;
+                        -webkit-border-radius: 1.3vw;
+                        -moz-border-radius: 1.3vw;
+                        -ms-border-radius: 1.3vw;
+                        -o-border-radius: 1.3vw;
+                    }
+                }
+
+                .name {
+                    margin: 0;
+                    color: white;
+                    font-size: 1.5vw;
+                    font-weight: 500;
+                    text-align: center;
+                    font-family: 'Mulish', sans-serif;
+
+                    @media (max-width:1000px) {
+                        font-size: 2vw;
+                    }
+
+                    @media (max-width:767px) {
+                        font-size: 3vw;
+                    }
+
+                    @media (max-width:500px) {
+                        font-size: 3.8vw;
+                    }
+                }
+
+                .desc {
+                    margin: 0;
+                    color: white;
+                    margin-top: 1vw;
+                    font-size: 1.1vw;
+                    font-family: 'Mulish', sans-serif;
+
+                    @media (max-width:1000px) {
+                        font-size: 1.5vw;
+                    }
+
+                    @media (max-width:767px) {
+                        font-size: 2.5vw;
+                        margin-top: 2.5vw;
+                    }
+
+                    @media (max-width:500px) {
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+}

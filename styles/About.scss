@@ -1,0 +1,130 @@
+.About {
+    .wrapper {
+        gap: 4vw;
+        display: flex;
+        align-items: center;
+
+        @media (max-width:767px) {
+            flex-direction: column;
+        }
+
+        .person {
+            height: auto;
+            max-width: 21vw;
+            min-width: 21vw;
+
+            @media (max-width:1000px) {
+                max-width: 25vw;
+                min-width: 25vw;
+            }
+
+            @media (max-width:767px) {
+                display: none;
+                max-width: 33vw;
+                min-width: 33vw;
+            }
+
+            @media (max-width:500px) {
+                max-width: 45vw;
+                min-width: 45vw;
+            }
+
+            @media (max-width:400px) {
+                max-width: 55vw;
+                min-width: 55vw;
+            }
+        }
+
+        .text {
+            color: white;
+            font-size: 1.3vw;
+            font-weight: 400;
+            font-family: 'Jura', sans-serif;
+
+            @media (max-width:1000px) {
+                font-size: 2vw;
+            }
+
+            @media (max-width:767px) {
+                font-size: 2.5vw;
+                text-align: justify;
+            }
+
+            @media (max-width:500px) {
+                font-size: 3.5vw;
+            }
+
+            @media (max-width:400px) {
+                font-size: 4vw;
+            }
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    }
+
+    .carousel {
+        .gallery {
+            padding: 3vw;
+            transition: 2.5s linear;
+            -webkit-transition: 2.5s linear;
+            -moz-transition: 2.5s linear;
+            -ms-transition: 2.5s linear;
+            -o-transition: 2.5s linear;
+
+            @media (max-width:400px) {
+                padding: 4vw;
+            }
+
+            .body {
+                cursor: pointer;
+                overflow: hidden;
+                border-radius: 1.5vw;
+                -webkit-border-radius: 1.5vw;
+                -moz-border-radius: 1.5vw;
+                -ms-border-radius: 1.5vw;
+                -o-border-radius: 1.5vw;
+
+                @media (max-width:400px) {
+                    border-radius: 2.5vw;
+                    -webkit-border-radius: 2.5vw;
+                    -moz-border-radius: 2.5vw;
+                    -ms-border-radius: 2.5vw;
+                    -o-border-radius: 2.5vw;
+                }
+
+                .abba {
+                    max-width: 100%;
+                    min-width: 100%;
+                    max-height: 24vw;
+                    min-height: 24vw;
+                    object-fit: cover;
+
+                    @media (max-width:900px) {
+                        max-height: 28vw;
+                        min-height: 28vw;
+                    }
+
+                    @media (max-width:600px) {
+                        max-height: 32vw;
+                        min-height: 32vw;
+                    }
+
+                    @media (max-width:400px) {
+                        max-height: 38vw;
+                        min-height: 38vw;
+                    }
+                }
+            }
+        }
+
+        .active-gallery {
+            transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+            -moz-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            -o-transform: scale(1.15);
+        }
+    }
+}
